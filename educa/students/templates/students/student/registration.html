@@ -1,0 +1,46 @@
+{% include "navigation.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}{% endblock %}
+<style>
+
+</style>
+<title>Log-in</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+{% block content %}
+<br>
+<br>
+
+
+<div class="container border">
+    <div class="row">
+    <div class="col-sm-3" style="background-color:;"></div>
+    <div class="col-sm-6"><div class="container border bg-light">
+    <br>
+        <div class="container border bg-info">
+        <h1>
+        Sign up
+    </h1>
+    </div>
+    <div class="module">
+        <div class="container border bg-light">
+            <p>Enter your details to create an account:</p>
+        </div>
+        <form method="post" novalidate>
+            {{ form|crispy }}
+            {% csrf_token %}
+            <p><input type="submit" value="Create my account" class="btn btn-info"></p>
+        </form>
+    </div></div>
+  </div>
+{% endblock %}

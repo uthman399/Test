@@ -1,0 +1,226 @@
+[
+{
+  "model": "courses.subject",
+  "pk": 1,
+  "fields": {
+    "title": "Mathematics",
+    "slug": "mathematics"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 2,
+  "fields": {
+    "title": "Music",
+    "slug": "music"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 3,
+  "fields": {
+    "title": "Physics",
+    "slug": "physics"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 4,
+  "fields": {
+    "title": "Programming",
+    "slug": "programming"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 5,
+  "fields": {
+    "title": "English",
+    "slug": "english"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 6,
+  "fields": {
+    "title": "Facebook",
+    "slug": "Facebook"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "subject": 4,
+    "title": "Course1",
+    "slug": "course1",
+    "overview": "",
+    "created": "2020-05-31T13:58:20.096Z",
+    "students": [
+      1
+    ]
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "subject": 4,
+    "title": "Course 2",
+    "slug": "course2",
+    "overview": "",
+    "created": "2020-05-31T14:00:52.870Z",
+    "students": [
+      1
+    ]
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 4,
+  "fields": {
+    "owner": 1,
+    "subject": 1,
+    "title": "my first day in school",
+    "slug": "my-first-day-school",
+    "overview": "fffffffffffffffffffff",
+    "created": "2020-06-13T00:52:51.115Z",
+    "students": []
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 1,
+  "fields": {
+    "course": 1,
+    "title": "Module 1",
+    "description": "",
+    "order": 0
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 2,
+  "fields": {
+    "course": 1,
+    "title": "Module 2",
+    "description": "",
+    "order": 1
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 3,
+  "fields": {
+    "course": 1,
+    "title": "Module 3",
+    "description": "",
+    "order": 5
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 4,
+  "fields": {
+    "course": 1,
+    "title": "Module 4",
+    "description": "",
+    "order": 6
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 5,
+  "fields": {
+    "course": 2,
+    "title": "Introduction",
+    "description": "Introduction",
+    "order": 0
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 6,
+  "fields": {
+    "course": 2,
+    "title": "cofiguration",
+    "description": "this is for configuring django",
+    "order": 1
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 7,
+  "fields": {
+    "course": 4,
+    "title": "Installation",
+    "description": "cccccc",
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 1,
+  "fields": {
+    "module": 5,
+    "object_id": 1,
+    "content_type": 13,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 2,
+  "fields": {
+    "module": 5,
+    "object_id": 1,
+    "content_type": 12,
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 3,
+  "fields": {
+    "module": 1,
+    "object_id": 1,
+    "content_type": 14,
+    "order": 0
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "title": "first",
+    "created": "2020-06-01T18:05:32.239Z",
+    "updated": "2020-06-01T18:05:32.240Z",
+    "content": "this is my first module"
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "title": "brown out reset",
+    "created": "2020-06-01T18:06:27.785Z",
+    "updated": "2020-06-01T18:06:27.785Z",
+    "file": "images/brown_out_reset_2.png"
+  }
+},
+{
+  "model": "courses.video",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "title": "first video",
+    "created": "2020-06-01T20:40:51.681Z",
+    "updated": "2020-06-01T20:43:50.933Z",
+    "url": "https://www.youtube.com/watch?v=qsEXBvyurXc"
+  }
+}
+]
